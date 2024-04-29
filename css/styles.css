@@ -1,34 +1,53 @@
 body {
-    color: black;
-    background-color: lightblue;
+    /*margin: 0;*/
+    font-family: Arial, sans-serif;
     text-align: center;
-
+  }
+  
+nav {
+    background-color: black;
+    width: 100%;
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* La fija en la parte superior */
 }
-
-.active {
-    text-align: left;
-}
-
-ul {
+  
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: lightblue;
-}
-  
-li {
-    float: right;
-}
-  
-li a {
-    display: block;
-    color: black;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: lightblue;
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center;
 }
   
-li a:hover {
-    background-color: skyblue;
+nav ul li {
+    display: inline-block;
+}
+  
+nav ul li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    color: white;
+    padding: 10px 20px; /* Margenes de los items del nav */
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+}
+  
+nav ul li:first-child {
+    margin-right: auto; /* Mueve el primer elemento (imagen) a la izquierda */
+}
+  
+nav ul li:first-child img {
+    width: 500px; /* Tamaño de la imagen */
+    margin: 15px; /* Margen alrededor de la imagen */
+}
+  
+section {
+    padding-top: 175px;
+    padding-bottom: 80px;
 }
