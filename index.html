@@ -7,32 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- meta que hace responsive la pagina web -->
     <meta name="description" content="Es una pagina web, de construccion"> <!-- sobre q trata la pagina -->
     <meta name="keywords" content="pepe, construccion"> <!-- como la gente busca nuestra pagina web -->
-    <link rel ="shortcut icon" href="images/pepe-construye-logo-2.jpeg"/>
+    <link rel ="shortcut icon" href=""/>
 
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/contactUs.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/footer.css">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- para importar iconos -->
+    <script src="https://kit.fontawesome.com/e76ff67367.js" crossorigin="anonymous"></script> <!-- para importar iconos -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- para vincularse con base de datos -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!-- para dejar las cosas lindas -->
-    <script src="js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> <!-- para poner un mapa en la pagina -->
 
 </head>
 <body>
 
-
-
-
-
-
     <div id="contact-us" class="contact-us-box">
-
         <p>Got a question?</p>
         <p id="contact-us-title">Contact Us</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Sapiente nesciunt ratione ad modi nostrum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
 
         <form id="contact-us-form" action="https://formspree.io/f/xayrkede" method="post">
             <div id="contact-us-name-box">
@@ -55,17 +47,39 @@
             <label id="contact-us-message">Message</label>
             <textarea class="solid-orange-rounded-border" name="message" required></textarea>
             <br>
-            <button id="contact-us-submit-button" class="solid-orange-rounded-border" type="submit">Submit</button>
+            <div class="submit-button">
+                <button id="contact-us-submit-button" class="solid-orange-rounded-border" type="submit">Submit</button>
+            </div>
         </form>
-
     </div>
 
-    <div class="footer">
-        <div class="websolvers-logo">
-            <a href="websolvers.html" target="_blank"><img src="" alt="WebSolvers"></a>
-        </div>    
+    <div class="map">
+        <!-- los estilos del mapa estan en general.css -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2048.8921582394646!2d-56.16954714140766!3d-34.86246598060829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8070aee87f3f%3A0x14e2844427157926!2sITS%20-%20Instituto%20Tecnol%C3%B3gico%20Superior!5e0!3m2!1ses-419!2suy!4v1716303234468!5m2!1ses-419!2suy" width="100%" height="600" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
+    
+    <div class="footer-box">
+        <div class="ul-social-icon-box">
+            <ul class="social-icon">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://x.com/Pepe_Construye"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/pepeconstruye_construcciones/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="mailto:wsolvers@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="ul-menu-box">
+            <ul class="menu">
+                <li><a href="#top">INICIO</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
+                <li><a href="#contact-us">CONTACTO</a></li>
+            </ul>
+        </div>
+        <div class="copyright-box">
+            <p>&copy2024 PEPE CONSTRUYE〡TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </div>
+    
 </body>
 </html>
 

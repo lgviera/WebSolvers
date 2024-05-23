@@ -1,0 +1,17 @@
+
+/* Hoja css para estilos generales, para no tener que andar poniendo el mismo estilo en cada hoja css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #252525;
+}
+
+.map {
+    display: flex;
+}
