@@ -16,7 +16,9 @@
 <script src="js/scripts.js"></script>
 <script src="https://kit.fontawesome.com/e76ff67367.js" crossorigin="anonymous"></script>
 </head>
-<body>      
+<body>
+    
+    <!-- estilos del nav en styles.css -->
     <nav>
         <ul>
             <li class="nav-logo"><a href="index.html"><img src="https://i.ibb.co/L5JZxrh/nav-logo.png" alt="PEPE CONSTRUYE" title="PEPE CONSTRUYE"></a></li>
@@ -26,8 +28,6 @@
         </ul>
     </nav>
     
-    
-
 <main>
     <div class="carousel-w3">
         <img class="mySlides" src="https://i.ibb.co/pySqCy0/005-lance-anderson-Qd-AAasr-Zhdk-unsplash.jpg" style='height: 100%; width: 100%; object-fit: contain'>
@@ -58,12 +58,13 @@
         }
         </script>
 </main>
+
 <button class="open-button" onclick="openForm()">Servicio al cliente</button>
 
 <div class="form-popup" id="myForm">
     <div id="contact-us" class="contact-us-box">
-        <p>Atenciòn al cliente 24/7</p>
-        <p id="contact-us-title">Contactanos</p>
+        <p>Atención al cliente 24/7</p>
+        <h4 id="contact-us-title">Contáctanos</h4>
         <p>Le contactaremos a la brevedad</p>
 
         <form id="contact-us-form" action="https://formspree.io/f/xayrkede" method="post">
@@ -81,7 +82,7 @@
             <label id="contact-us-email">Email</label>
             <input class="solid-orange-rounded-border" type="email" name="email" required>
             <br>
-            <label id="contact-us-phone-number">Numero de telefono</label>
+            <label id="contact-us-phone-number">Número de telefono</label>
             <input class="solid-orange-rounded-border" type="tel" name="phone-number">
             <br>
             <label id="contact-us-message">Mensaje</label>
@@ -89,8 +90,7 @@
             <br>
             <div class="submit-button"> 
                 <button id="contact-us-submit-button" class="solid-orange-rounded-border" type="submit">Enviar</button>
-                <button class="solid-orange-rounded-border" type="button" onclick="closeForm()">Cerrar pestaña</button>
-
+                <button id="contact-us-close-button" class="solid-orange-rounded-border" type="button" onclick="closeForm()">Cerrar pestaña</button>
             </div>
         </form>
     </div>
@@ -107,11 +107,11 @@ function closeForm() {
 </script>
 
 
-<div class="footer">
+<!-- <div class="footer">
     <div class="websolvers-logo">
         <a href="websolvers.html" target="_blank"><img src="images/websolvers-logo-2-1.png" alt="WebSolvers"></a>
     </div>    
-</div>
+</div> -->
 
 </body>
 <!-- <footer> -->
@@ -119,8 +119,8 @@ function closeForm() {
         <div class="ul-social-icon-box">
             <ul class="social-icon">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://x.com/Pepe_Construye"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/pepeconstruye_construcciones/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://x.com/Pepe_Construye" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/pepeconstruye_construcciones/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="mailto:wsolvers@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         </div>
@@ -129,7 +129,7 @@ function closeForm() {
                 <li><a href="#top">INICIO</a></li>
                 <li><a href="proyectos.html">PROYECTOS</a></li>
                 <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
-                <li><a href="#contact-us">CONTACTO</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
             </ul>
         </div>
         <div class="copyright-box">
@@ -137,7 +137,5 @@ function closeForm() {
         </div>
     </div>
 <!-- </footer> -->
-
-
 </html>
                                                                                                                

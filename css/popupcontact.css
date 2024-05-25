@@ -1,9 +1,12 @@
 
+/************************************************/
+/* Extra small devices (phones, 600px and down) */
+/************************************************/
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: #444343;
-  color: rgb(212, 102, 11);
+  color: #d4660b;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
@@ -12,24 +15,22 @@
   bottom: 23px;
   right: 28px;
   width: 280px;
-  border-radius: 40% 40% 0 40%;
+  /* border-radius: 40% 40% 0 40%; */
+  border-radius: 40px 40px 0 40px;
 }
 
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
+  /* bottom: 0; */
+  bottom: 15px;
   right: 15px;
   z-index: 9;
 }
 
-/* empieza linea original de contact us */
-
-/* For mobile phones: */
-
 #contact-us html{
-    font-size: 13px;
+    font-size: 13px;  /* 1em = 13px */
 }
 
 .solid-orange-rounded-border {
@@ -37,13 +38,12 @@
     border-radius: 7px;
 }
 
-.orange-hover:hover {
-    text-decoration: none;
-    color:#ff7700;
-}
-
 #contact-us p {
-    margin-bottom: .5em;
+    /* border: solid 2px red; */
+    margin: 0;
+    padding: 0.2em;
+    color: #000;
+    font-weight: 900;
 }
 
 #contact-us input {
@@ -71,22 +71,26 @@
     opacity: 90%;
     position: sticky;
     font-size: 13px;
-    width: 20vw;
-    border-radius: 10% 10% 10% 10%;
+    width: 70vw;
+    /* border-radius: 10% 10% 10% 10%; */
+    border-radius: 35px 35px 35px 35px;
 }
 
 #contact-us-title {
     color: #ff7700;
-    font-size: 13px;
+    /* font-size: 1.5em; */
     font-weight: bold;
 }
 
 
 #contact-us-form {
+    /* border: solid 2px red; */
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 0.5em;
+    margin-top: 1em;
+    color: black;
+    font-weight: 900;
 }
 
 #contact-us-name-box {
@@ -106,25 +110,38 @@
     flex-direction: column;
 }
 
-#contact-us-submit-button {
+.submit-button {
+    /* border: solid 2px red; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#contact-us-submit-button, #contact-us-close-button {
     background-color: white;
     color: #333;
     transition: 0.5s;
-    width: 50%;
-    font-size: 13px;
+    width: 40%;
+    cursor: pointer;
 }
-#sub
-#contact-us-submit-button:hover {
+
+#contact-us-submit-button:hover, #contact-us-close-button:hover {
     background-color: #ff7700;
     color: white;
 }
 
-/* For tablets  */
+/*******************************************************************/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*******************************************************************/
 
 @media only screen and (min-width: 600px) {
 
     .solid-orange-rounded-border {
         border-radius: 0 0 10px 10px;
+    }
+
+    .contact-us-box {
+        width: 50vw;
     }
 
     #contact-us label {
@@ -160,13 +177,45 @@
     }
 
     .submit-button {
+        /* border: solid 2px red; */
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 100%;
     }
 
-    #contact-us-submit-button {
-        width: 50%;
+    #contact-us-submit-button, #contact-us-close-button {
+        width: 40%;
         font-weight: 900;
+    }
+}
+
+/****************************************************/
+/* Medium devices (landscape tablets, 768px and up) */
+/****************************************************/
+
+@media only screen and (min-width: 768px) {
+
+    .contact-us-box {
+        width: 40vw;
+    }
+}
+
+/**************************************************/
+/* Large devices (laptops/desktops, 992px and up) */
+/**************************************************/
+
+@media only screen and (min-width: 992px) {
+    .contact-us-box {
+        width: 30vw;
+    }
+}
+
+/*******************************************************************/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*******************************************************************/
+
+@media only screen and (min-width: 1200px) {
+    .contact-us-box {
+        width: 25vw;
     }
 }

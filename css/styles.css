@@ -1,23 +1,32 @@
-body {
-    text-align: center;
-    align-items: center;
-}
 /*  Margin - Clears an area outside the border. The margin is transparent    */
 /*  Border - A border that goes around the padding and content               */
 /*  Padding - Clears an area around the content. The padding is transparent  */
 /*  Content - The content of the box, where text and images appear           */ 
+:root {
+    --nav-background-color: #a3a7b7c7;
+    --nav-link-color: #fff;
+    --nav-link-hover-color: #ff8000;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+}
+
+body section {
+    image-rendering: optimizeSpeed;
+}
+
 nav {
-    background-color: #a3a7b7c7;               
+    background-color: var(--nav-background-color);               
     width: 100%;                       
     position: fixed;                   
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 20px 0 20px 0;
     z-index: 10;
-}                   
-
+}   
 
 nav ul {
-    /* background-color: #a3a7b7c7; */
     list-style-type: none;
     margin: 0 50px 0 50px;
     padding: 0;
@@ -27,17 +36,17 @@ nav ul {
 }
   
 nav ul li a {
-    /* background-color: #a3a7b7c7; */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: var(--nav-link-color);
     margin: 0 20px 0 20px;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    color: rgb(255, 136, 0);
+    color: var(--nav-link-hover-color);
 }
   
 nav ul li:first-child {
@@ -49,58 +58,10 @@ nav ul li:first-child {
     margin: 0;
 }
 
-/* .slideshow-box {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+/****************************************/
+/* Dispositivos con ancho de pantalla MENOR O IGUAL que 1200px */
+/****************************************/
+
+@media only screen and (max-width: 1200px) {
+    
 }
-
-.slogan {
-    background-color: #a3a7b7c7;
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    padding: 0 30px 0 30px;
-    border-radius: 0 15px 15px 0;
-}
-
-.slogan h1 {
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} */
-body section {
-    image-rendering: optimizeSpeed;
-}
-
-.article-texto {
-    background: linear-gradient(to bottom right, #a3a7b7c7, white, #a3a7b7c7);
-    padding: 50px 500px 50px 500px;
-    text-align: center;
-    color: black;
-}
-
-/*.footer {
-    background: linear-gradient(to bottom right, #a3a7b7c7, white, #a3a7b7c7);
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100vw;
-    height: 400px;
-}*/
-
-.websolvers-logo {
-    /* background-color: #fff; */
-    width: 35px;
-    height: 48px;
-    margin: 10px 50px 10px 10px;
-}
-
-.websolvers-logo img {
-    width: 35px;
-    height: 48px;
-}
-
