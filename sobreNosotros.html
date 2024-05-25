@@ -1,13 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
+<title>PepeConstruye - Construcciones Ediliceas</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Es una pagina web, de construccion"> <!-- sobre q trata la pagina -->
+<meta name="keywords" content="pepe, construccion"> <!-- como la gente busca nuestra pagina web -->
+<link rel ="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/popupcontact.css">
+<link rel="stylesheet" href="css/styles_sobrenosotros.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- para vincular con base de datos -->
+<script src="js/scripts.js"></script>
+<script src="https://kit.fontawesome.com/e76ff67367.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <h1>Sobre Nosostros</h1>
-    <a href="index.html">Volver a inicio</a>
+<body>   
+    <!-- barra de redirecciones -->   
+    <nav>
+        <ul>
+            <li class="nav-logo"><a href="index.html"><img src="https://i.ibb.co/L5JZxrh/nav-logo.png" alt="PEPE CONSTRUYE" title="PEPE CONSTRUYE"></a></li>
+            <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="proyectos.html">PROYECTOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <!-- intento de sobre nosotros -->
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <section>
+        <div class="container">
+        <h2>Frente de la Tarjeta</h2>
+                      <p>Este es el frente de la tarjeta.</p>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Frente de la Tarjeta</h2>
+                      <p>Este es el frente de la tarjeta.</p>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>        <div class="container">
+        <h2>Frente de la Tarjeta</h2>
+                      <p>Este es el frente de la tarjeta.</p>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>        <div class="container">
+        <h2>Frente de la Tarjeta</h2>
+                      <p>Este es el frente de la tarjeta.</p>
+        <div class="overlay">
+          <div class="text">Hello World</div>
+        </div>
+      </div>
+    </section>
+      
+<!-- servicio al cliente pop-up -->
+<button class="open-button" onclick="openForm()">Servicio al cliente</button>
+<div class="form-popup" id="myForm">
+    <div id="contact-us" class="contact-us-box">
+        <p>Atenciòn al cliente 24/7</p>
+        <p id="contact-us-title">Contactanos</p>
+        <p>Le contactaremos a la brevedad</p>
+
+        <form id="contact-us-form" action="https://formspree.io/f/xayrkede" method="post">
+            <div id="contact-us-name-box">
+                <div class="contact-us-first-name">
+                    <label>Nombre</label>
+                    <input class="solid-orange-rounded-border" type="text" name="first-name" required>
+                </div>
+                <div class="contact-us-last-name">
+                    <label>Apellido</label>
+                    <input class="solid-orange-rounded-border" type="text" name="last-name">
+                </div>
+            </div>
+            <br>
+            <label id="contact-us-email">Email</label>
+            <input class="solid-orange-rounded-border" type="email" name="email" required>
+            <br>
+            <label id="contact-us-phone-number">Numero de telefono</label>
+            <input class="solid-orange-rounded-border" type="tel" name="phone-number">
+            <br>
+            <label id="contact-us-message">Mensaje</label>
+            <textarea class="solid-orange-rounded-border" name="message" required></textarea>
+            <br>
+            <div class="submit-button"> 
+                <button id="contact-us-submit-button" class="solid-orange-rounded-border" type="submit">Enviar</button>
+                <button class="solid-orange-rounded-border" type="button" onclick="closeForm()">Cerrar pestaña</button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>    
+<!-- footer --> 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="footer-box">
+        <div class="ul-social-icon-box">
+            <ul class="social-icon">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://x.com/Pepe_Construye"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/pepeconstruye_construcciones/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="mailto:wsolvers@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="ul-menu-box">
+            <ul class="menu">
+                <li><a href="#top">INICIO</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="sobreNosotros.html">SOBRE NOSOTROS</a></li>
+                <li><a href="#contact-us">CONTACTO</a></li>
+            </ul>
+        </div>
+        <div class="copyright-box">
+            <p>&copy2024 PEPE CONSTRUYE〡TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </div>
+
 </body>
 </html>

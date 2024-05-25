@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+    align-items: center;
+}
+/*  Margin - Clears an area outside the border. The margin is transparent    */
+/*  Border - A border that goes around the padding and content               */
+/*  Padding - Clears an area around the content. The padding is transparent  */
+/*  Content - The content of the box, where text and images appear           */ 
+nav {
+    background-color: #a3a7b7c7;               
+    width: 100%;                       
+    position: fixed;                   
+    margin: 0 0 0 0;
+    padding: 20px 0 20px 0;
+    z-index: 10;
+}                   
+
+
+nav ul {
+    /* background-color: #a3a7b7c7; */
+    list-style-type: none;
+    margin: 0 50px 0 50px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+nav ul li a {
+    /* background-color: #a3a7b7c7; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0 20px 0 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(255, 136, 0);
+}
+  
+nav ul li:first-child {
+    margin: 0 auto 0 0;
+}
+
+.nav-logo img {
+    width: 400px;
+    margin: 0;
+}
+
+/* .slideshow-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.slogan {
+    background-color: #a3a7b7c7;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    padding: 0 30px 0 30px;
+    border-radius: 0 15px 15px 0;
+}
+
+.slogan h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+body section {
+    image-rendering: optimizeSpeed;
+}
+
+.article-texto {
+    background: linear-gradient(to bottom right, #a3a7b7c7, white, #a3a7b7c7);
+    padding: 50px 500px 50px 500px;
+    text-align: center;
+    color: black;
+}
+
+/*.footer {
+    background: linear-gradient(to bottom right, #a3a7b7c7, white, #a3a7b7c7);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100vw;
+    height: 400px;
+}*/
+
+.websolvers-logo {
+    /* background-color: #fff; */
+    width: 35px;
+    height: 48px;
+    margin: 10px 50px 10px 10px;
+}
+
+.websolvers-logo img {
+    width: 35px;
+    height: 48px;
+}
+
