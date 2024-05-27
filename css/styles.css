@@ -6,17 +6,19 @@
     --nav-background-color: #a3a7b7c7;
     --nav-link-color: #fff;
     --nav-link-hover-color: #ff8000;
+    --background-color: #252525
 }
 
 body {
     text-align: center;
     align-items: center;
+    background-color: var(--background-color);
 }
 
 body section {
     image-rendering: optimizeSpeed;
 }
-
+/*
 nav {
     background-color: var(--nav-background-color);               
     width: 100%;                       
@@ -56,12 +58,4 @@ nav ul li:first-child {
 .nav-logo img {
     width: 400px;
     margin: 0;
-}
-
-/****************************************/
-/* Dispositivos con ancho de pantalla MENOR O IGUAL que 1200px */
-/****************************************/
-
-@media only screen and (max-width: 1200px) {
-    
 }

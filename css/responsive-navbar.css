@@ -1,0 +1,155 @@
+
+/* Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices). (W3schools) */
+
+/* For mobile phones: */
+
+:root {
+    --sidebar-background-color: rgb(190, 190, 190);
+    --text-color: #ff6600;
+}
+
+#sidebar {
+    display: none;
+}
+
+.open-sidebar {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+}
+
+.open-sidebar span {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #ff6600;
+}
+
+.close-sidebar {
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.close-sidebar span {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #ff6600;
+}
+
+.close-sidebar span:hover {
+    font-size: 3.5em;
+    transition: .3s ease;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--sidebar-background-color);
+    height: 100vh;
+    width: 70vw;
+    top: 0;
+    right: -72vw;
+    position: fixed;
+    font-family: Ubuntu;
+    box-shadow: -2px 0px 30px #666;
+    z-index: 1;
+}
+
+#sidebar:checked ~ .links-container {
+    right: 0;
+    transition: 0.75s ease;
+}
+
+#sidebar:checked ~ #overlay {
+    background-color:rgba(0, 0, 0, 0.01);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+
+.links-container a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #ff6600;
+    font-weight: 900;
+    -webkit-text-stroke: 0.7px #000;
+}
+
+.links-container a.topbar-logo {
+    padding: 0;
+}
+
+.links-container a:hover {
+    background-color: #000;
+    font-size: 2em;
+    transition: .3s ease;
+}
+
+.links-container a img {
+    width: 90%;
+    padding: 20px 20px 20px 15px;
+}
+
+.links-container a img:hover {
+    width: 100%;
+    transition: .3s ease;
+}
+
+/**************************************/
+/* Tablets y mas */
+/**************************************/
+
+@media only screen and (min-width:950px){
+    .open-sidebar, .close-sidebar {
+        display: none;
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: row;
+        height: 10vh;
+        width: 100vw;
+        justify-content: flex-end;
+        align-items: center;
+        right: 0;
+    }
+
+    .links-container a {
+        justify-content: center;
+        font-size: 1.5em;
+        padding: 0 20px 0 20px;
+        width: auto;
+        margin: 0;
+    }
+
+    .links-container a.topbar-logo {
+        margin-right: auto;
+        margin-left: 40px;
+    }
+
+    .links-container a:hover {
+        background-color: transparent;
+        color: #000;
+        font-size: 1.5em;
+        transition: 0.5s ease;
+    }
+
+    .links-container a img {
+        padding: 0;
+        width: 30vw;
+    }
+
+    .links-container a img:hover {
+        width: 30vw;
+    }
+
+}

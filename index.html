@@ -3,22 +3,30 @@
 <head>
 <title>PepeConstruye - Construcciones Ediliceas</title>
 <meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <!-- Permite... -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- hace responsive la pagina -->
 <meta name="description" content="Es una pagina web, de construccion"> <!-- sobre q trata la pagina -->
-<meta name="keywords" content="pepe, construccion"> <!-- como la gente busca nuestra pagina web -->
+<meta name="keywords" content="pepe, construccion, edificios"> <!-- como la gente busca nuestra pagina web -->
+
+<!-- links a iconos -->
 <link rel ="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0" />
+
+<!-- links a hojas de estilos -->
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/popupcontact.css">
+<link rel="stylesheet" href="css/responsive-navbar.css">
+<link rel="stylesheet" href="css/carousel.css">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- para vincular con base de datos -->
 <script src="js/scripts.js"></script>
 <script src="https://kit.fontawesome.com/e76ff67367.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <!-- estilos del nav en styles.css -->
+    <!--
+    estilos del nav en styles.css
     <nav>
         <ul>
             <li class="nav-logo"><a href="index.html"><img src="https://i.ibb.co/L5JZxrh/nav-logo.png" alt="PEPE CONSTRUYE" title="PEPE CONSTRUYE"></a></li>
@@ -27,18 +35,44 @@
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
+    -->
+
+    <!-- responsive-navbar.css  -->
+    <nav>
+        <label for="sidebar" class="open-sidebar">
+            <span class="material-symbols-rounded">menu</span>
+        </label>
+        <input type="checkbox" id="sidebar">
+        <div class="links-container">
+            <label for="sidebar" class="close-sidebar">
+                <span class="material-symbols-rounded">close</span>
+            </label>
+            
+            <a class="topbar-logo" href="index.html"><img src="https://i.ibb.co/L5JZxrh/nav-logo.png" alt="nav-logo"></a>
+            <a href="proyectos.html">PROYECTOS</a>
+            <a href="sobreNosotros.html">SOBRE NOSOTROS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </div>
+        <label for="sidebar" id="overlay">
+            <!-- <div class="layer"></div> -->
+        </label>
+    </nav>
     
+
 <main>
-    <div class="carousel-w3">
-        <img class="mySlides" src="https://i.ibb.co/pySqCy0/005-lance-anderson-Qd-AAasr-Zhdk-unsplash.jpg" style='height: 100%; width: 100%; object-fit: contain'>
-        <img class="mySlides" src="https://i.ibb.co/SRhBsmj/004-kaleb-tapp-unsplash.jpg style=" style='height: 100%; width: 100%; object-fit: contain'>
-        <img class="mySlides" src="https://i.ibb.co/zbqJVKd/002-chuttersnap-WLv-Iyxk5ov0-unsplash.jpg" style='height: 100%; width: 100%; object-fit: contain'>
-        <img class="mySlides" src="https://i.ibb.co/vwgr0Zh/003-danist-soh-dq-Xiw7n-Cb9-Q-unsplash.jpg"style='height: 100%; width: 100%; object-fit: contain'>
+
+    <!-- carousel.css -->
+    <!-- voy a ver para hacer un slider diferente en mobile (width<600px) -->
+    <div class="carousel">
+        <img class="mySlides" src="https://i.ibb.co/pySqCy0/005-lance-anderson-Qd-AAasr-Zhdk-unsplash.jpg">
+        <img class="mySlides" src="https://i.ibb.co/SRhBsmj/004-kaleb-tapp-unsplash.jpg style=">
+        <img class="mySlides" src="https://i.ibb.co/zbqJVKd/002-chuttersnap-WLv-Iyxk5ov0-unsplash.jpg">
+        <img class="mySlides" src="https://i.ibb.co/vwgr0Zh/003-danist-soh-dq-Xiw7n-Cb9-Q-unsplash.jpg">
         <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-      </div>
+    </div>
      
-      <script>
+    <script>
         var slideIndex = 1;
         showDivs(slideIndex);
         
@@ -56,7 +90,7 @@
           }
           x[slideIndex-1].style.display = "block";  
         }
-        </script>
+    </script>
 </main>
 
 <button class="open-button" onclick="openForm()">Servicio al cliente</button>

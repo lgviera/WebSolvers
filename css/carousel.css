@@ -1,0 +1,10 @@
+.carousel {
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+}
