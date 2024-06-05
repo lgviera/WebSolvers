@@ -5,7 +5,7 @@
 
 :root {
     --sidebar-background-color: rgb(190, 190, 190);
-    --text-color: #ff6600;
+    --text-color: #ff6a00d2;
 }
 
 #sidebar {
@@ -21,7 +21,7 @@
 .open-sidebar span {
     font-size: 2.5em;
     font-weight: 900;
-    color: #ff6600;
+    color: var(--text-color);
 }
 
 .close-sidebar {
@@ -32,7 +32,7 @@
 .close-sidebar span {
     font-size: 2.5em;
     font-weight: 900;
-    color: #ff6600;
+    color: var(--text-color);
 }
 
 .close-sidebar span:hover {
@@ -80,9 +80,9 @@
     padding: 15px;
     text-decoration: none;
     font-size: 1.5em;
-    color: #ff6600;
+    color: var(--text-color);
     font-weight: 900;
-    -webkit-text-stroke: 0.7px #000;
+    /* -webkit-text-stroke: 1px black ; */
 }
 
 .links-container a.topbar-logo {
